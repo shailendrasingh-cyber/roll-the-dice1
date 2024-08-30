@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(-45deg, #fdfbfb ,#ebedee);
+}
+
+header {
+    padding: 50px;
+}
+
+header title{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 5rem;
+    /* text-shadow: 1px 1px 10px#54DCF8; */
+}
+
+
+button {
+    background-color: transparent ;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    padding: 20px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    text-transform: uppercase;
+    width: 170px;
+}
+
+button:hover {
+    background-color: #fff;
+    color: brown;
+    border: 3px solid #fff;
+}
+
+button:disabled {
+    background-color: #D3D3D3;
+    color: #fff;
+    border: 3px solid #D3D3D3;
+}
+
+/* GAME PANEL */
+
+.gamepanel{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: repeat(3, 90px);
+    width: 80%;
+    height: 80%;
+    background-image: url(image/background1.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    padding: 20px;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.item {
+    margin: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.player-title {
+    grid-column:1/4;
+
+}
+
+.player-title h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
+.roll-container{
+    grid-column: 1/2;
+    grid-row:2/3;
+}
+
+.reset-container {
+    grid-column: 1/2;
+    grid-row:3/4;
+}
+
+
+.current-points-box {
+    grid-column: 3/4;
+    grid-row: 2/4;
+    height: 155px;
+    width: 155px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    color: brown;
+}
+
+.current-points-box p {
+    padding: 10px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ebedee;
+}
+
+#totalPoints {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px;
+}
+
+.dice-container {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.win-lose-msg {
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+/* SIZING DICE IMAGES */
+
+img {
+    width: 100px;
+}
+
+#diceImgDOM {
+    width: 170px;
+}
+
+.dice-images {
+    align-self: center;
+    justify-self: center;
+}
+
+.no-display {
+    display: none;
+}
+
+/* footer */
+
+footer {
+    font-family: monospace;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}

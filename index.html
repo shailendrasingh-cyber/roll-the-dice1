@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400|Montserrat"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stylish&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dice</title>
+  </head>
+  <body>
+    <video autoplay muted loop plays-inline class="background-clip">
+      <source src="./image/videoplayback.mp4" type="video/mp4" />
+    </video>
+    <header id="title"><h1>Create the Story</h1></header>
+    <a href="index2.html" class="item button-link"></a>
+
+    <div class="gamepanel">
+      <div class="item player-title">
+        <h2 class="item">Identify the picture and frame it</h2>
+      </div>
+      <div class="item dice-container">
+        <div class="dice-images">
+          <img
+            src="image/img1.jpeg"
+            id="diceImgDOM"
+            class="no-display"
+            alt="dices"
+          />
+        </div>
+      </div>
+      <div class="roll-reset-container">
+        <div class="roll-container">
+          <button class="item" id="roll-btn">Roll the Dice</button>
+        </div>
+        <div class="reset-container">
+          <button class="item" id="reset-btn">Reset Game</button>
+        </div>
+      </div>
+      <!-- <div class="item current-points-box">
+            <p>CURRENT POINTS</p>
+            <hr>
+            <div id="totalPoints">0</div>
+        </div> -->
+
+      <div class="item win-lose-msg">
+        <h2 id="display-lose"></h2>
+        <h2 id="display-win"></h2>
+      </div>
+    </div>
+
+    <footer>
+      <p>made with ♥ by CSKM</p>
+      <p>All the best students</p>
+    </footer>
+
+    <script src="test.js"></script>
+  </body>
+</html>
