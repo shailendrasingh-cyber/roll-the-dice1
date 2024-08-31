@@ -6,7 +6,7 @@ const totalPoints = document.querySelector("#totalPoints");
 
 let diceImgs = {
   dice1: "image/img1.jpeg",
-  dice2: "image/img2.jpeg",
+  dice2: "image/img7.jpeg",
   dice3: "image/img3.jpeg",
   dice4: "image/img4.jpeg",
   dice5: "image/img5.jpeg",
