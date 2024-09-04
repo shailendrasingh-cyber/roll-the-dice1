@@ -22,7 +22,7 @@ let diceImgs = {
     dice = Math.floor((Math.random() * 6) + 1);
 
     // 2. Display the loading GIF
-    const loadingGIF = 'diceimg.gif';  // Replace with your actual GIF path
+    const loadingGIF = 'final.gif';  // Replace with your actual GIF path
     const diceDOM = document.querySelector("#diceImgDOM");
     diceDOM.classList.remove("no-display");
     diceDOM.src = loadingGIF;
